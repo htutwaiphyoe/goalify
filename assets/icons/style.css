@@ -1,0 +1,40 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-clock-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-check-square-o {
+  width: 0.9324999999999999em;
+}
+
+.icon-calendar {
+  width: 0.9285714285714285em;
+}
+
+.icon-trash {
+  width: 0.7857142857142857em;
+}
+
+.icon-calendar-check-o {
+  width: 0.9285714285714285em;
+}
+
+.icon-percent {
+  width: 0.8571428571428571em;
+}

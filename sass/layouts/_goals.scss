@@ -1,0 +1,70 @@
+.goals {
+    flex: 2;
+    padding: 0 4rem 0 0;
+    overflow-y: scroll;
+    &__heading {
+        font-size: 3.5rem;
+        padding: 2.5rem 0 0 0;
+     
+        color: $color-foreground;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        // background-color: $color-primary-light;
+        // color: $color-white;
+        background-color: $color-white;
+        color: $color-foreground;
+        padding: 2rem 4rem;
+        border-radius: 3rem;
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        -ms-border-radius: 3;
+        -o-border-radius: 3;
+        text-align: center;
+        margin-top: 2rem;
+        box-shadow: 0 2px 4px rgba($color-shadow,.6);
+    }
+    &__time {
+        span {
+            font-size: 4rem;
+        }
+        font-size: 1.6rem;
+    }
+    &__title {
+        font-size: 1.6rem;
+    }
+
+    &__btns {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            padding: 1rem;
+            border-radius: 1rem;
+            border: none;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+            cursor: pointer;
+            outline: none;
+            &:active {
+                outline: none;
+            }
+            background-color: $color-primary-light-blur;
+        }
+        svg {
+            width: 2.2rem;
+            height: 2.2rem;
+            fill: $color-white;
+            
+        }
+    }
+}
