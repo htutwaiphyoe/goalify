@@ -5,7 +5,7 @@
     &__heading {
         font-size: 3.5rem;
         padding: 2.5rem 0 0 0;
-     
+
         color: $color-foreground;
     }
     &__list {
@@ -27,7 +27,7 @@
         -o-border-radius: 3;
         text-align: center;
         margin-top: 2rem;
-        box-shadow: 0 2px 4px rgba($color-shadow,.6);
+        box-shadow: 0 2px 4px rgba($color-shadow, 0.6);
     }
     &__time {
         span {
@@ -58,13 +58,22 @@
             &:active {
                 outline: none;
             }
-            background-color: $color-primary-light-blur;
+            background-color: $color-primary;
+
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+
+            &:hover {
+                background-color: $color-primary-light;
+            }
         }
         svg {
             width: 2.2rem;
             height: 2.2rem;
             fill: $color-white;
-            
         }
     }
 }

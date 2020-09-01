@@ -74,10 +74,10 @@ body {
 }
 .statistics__form-input:focus {
   outline: none;
-  border: 1.4px solid #ebebeb;
+  border: 1.4px solid #4630eb;
 }
 .statistics__form-input:hover {
-  border: 1.4px solid #ebebeb;
+  border: 1.4px solid #4630eb;
 }
 .statistics__form-hour, .statistics__form-min, .statistics__form-time {
   font-size: 1.5rem;
@@ -93,14 +93,14 @@ body {
 }
 .statistics__form-hour:focus, .statistics__form-min:focus, .statistics__form-time:focus {
   outline: none;
-  border: 1.4px solid #ebebeb;
+  border: 1.4px solid #4630eb;
 }
 
 .container {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: #ebebeb;
+  background-color: #e7e7e7;
 }
 
 .goals {
@@ -157,10 +157,18 @@ body {
   -o-border-radius: 1rem;
   cursor: pointer;
   outline: none;
-  background-color: #5954eee1;
+  background-color: #4630eb;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 .goals__btns button:active {
   outline: none;
+}
+.goals__btns button:hover {
+  background-color: #6250ee;
 }
 .goals__btns svg {
   width: 2.2rem;
@@ -176,12 +184,22 @@ body {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-  border: 1px solid #5954eee1;
-  background-color: #5954eee1;
+  border: 1px solid #4630eb;
+  background-color: #4630eb;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 .btn:active {
   outline: none;
+}
+.btn:hover {
+  border: 1px solid #6250ee;
+  background-color: #6250ee;
 }
 
 /*# sourceMappingURL=style.css.map */
