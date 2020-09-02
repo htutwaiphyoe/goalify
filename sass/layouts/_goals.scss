@@ -13,7 +13,7 @@
         padding: 2.5rem 0 0 0;
 
         color: $color-foreground;
-        @include responsive(30) {
+        @include responsive(27) {
             text-align: center;
         }
     }
@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        @include responsive(30) {
+        @include responsive(27) {
             justify-content: center;
         }
     }

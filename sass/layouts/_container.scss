@@ -6,5 +6,7 @@
 
     @include responsive(64) {
         flex-direction: column;
+
+        height: auto;
     }
 }
