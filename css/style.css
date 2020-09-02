@@ -123,7 +123,6 @@ body {
 @media only screen and (max-width: 48em) {
   .container {
     flex-direction: column;
-    background-color: #8F42E6;
     height: auto;
   }
 }

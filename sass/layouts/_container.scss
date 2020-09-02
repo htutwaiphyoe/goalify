@@ -6,7 +6,7 @@
 
     @include responsive(48) {
         flex-direction: column;
-        background-color: $color-primary;
+
         height: auto;
     }
 }
