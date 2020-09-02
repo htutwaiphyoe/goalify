@@ -10,6 +10,10 @@
     @include responsive(48) {
         margin-top: 5rem;
     }
+    @include responsive(36) {
+        margin: 0 2rem;
+        margin-top: 2rem;
+    }
     &__box {
         padding: 5rem 3.5rem;
         border-radius: 3rem;
