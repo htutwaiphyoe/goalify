@@ -1,29 +1,32 @@
 .statistics {
     flex: 1;
     margin: 0 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include responsive(64) {
+    // display: flex;
+    // justify-content: center;
+    margin-top: 10rem;
+    @include responsive(58) {
+        flex: 2;
+    }
+    @include responsive(48) {
+        width: 100%;
         margin: 0;
     }
     &__box {
         padding: 5rem 3.5rem;
         border-radius: 3rem;
+
         -webkit-border-radius: 3rem;
         -moz-border-radius: 3rem;
         -ms-border-radius: 3rem;
         -o-border-radius: 3rem;
         background-color: $color-white;
         box-shadow: 0 2px 3px rgba($color-shadow, 0.5);
-        @include responsive(64) {
-            width: 100%;
-            padding: 5rem 3.5rem;
-            border-radius: 0;
-            -webkit-border-radius: 0;
-            -moz-border-radius: 0;
-            -ms-border-radius: 0;
-            -o-border-radius: 0;
+        @include responsive(48) {
+            border-radius: 0rem;
+            -webkit-border-radius: 0rem;
+            -moz-border-radius: 0rem;
+            -ms-border-radius: 0rem;
+            -o-border-radius: 0rem;
 }
     }
 

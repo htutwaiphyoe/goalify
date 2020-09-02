@@ -3,9 +3,14 @@
     padding: 0 4rem 0 0;
     overflow-y: scroll;
     @include responsive(64) {
-        width: 100%;
-        padding: 5rem 3.5rem;
-
+        flex: 1;
+    }
+    @include responsive(48) {
+        padding: 1rem 4rem;
+        overflow-y: hidden;
+    }
+    @include responsive(20) {
+        padding: 1rem 1rem;
         overflow-y: hidden;
     }
     &__heading {
@@ -13,23 +18,31 @@
         padding: 2.5rem 0 0 0;
 
         color: $color-foreground;
-        @include responsive(27) {
+        @include responsive(58) {
             text-align: center;
+            font-size: 2.5rem;
         }
     }
     &__list {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        @include responsive(27) {
+        @include responsive(58) {
             justify-content: center;
+        }
+        @include responsive(48) {
+            justify-content: space-evenly;
+        }
+        @include responsive(30) {
+            justify-content: space-evenly;
         }
     }
     &__item {
         // background-color: $color-primary-light;
         // color: $color-white;
         background-color: $color-white;
+        list-style: none;
         color: $color-foreground;
         padding: 2rem 4rem;
         border-radius: 3rem;

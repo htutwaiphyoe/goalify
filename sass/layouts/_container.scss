@@ -4,7 +4,7 @@
     display: flex;
     background-color: $color-background;
 
-    @include responsive(64) {
+    @include responsive(48) {
         flex-direction: column;
 
         height: auto;

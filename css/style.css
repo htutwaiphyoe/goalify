@@ -22,12 +22,16 @@ body {
 .statistics {
   flex: 1;
   margin: 0 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 10rem;
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 58em) {
   .statistics {
+    flex: 2;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .statistics {
+    width: 100%;
     margin: 0;
   }
 }
@@ -41,15 +45,13 @@ body {
   background-color: #ffffff;
   box-shadow: 0 2px 3px rgba(170, 170, 170, 0.5);
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 48em) {
   .statistics__box {
-    width: 100%;
-    padding: 5rem 3.5rem;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
   }
 }
 .statistics__heading {
@@ -118,7 +120,7 @@ body {
   display: flex;
   background-color: #e7e7e7;
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 48em) {
   .container {
     flex-direction: column;
     height: auto;
@@ -132,8 +134,18 @@ body {
 }
 @media only screen and (max-width: 64em) {
   .goals {
-    width: 100%;
-    padding: 5rem 3.5rem;
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .goals {
+    padding: 1rem 4rem;
+    overflow-y: hidden;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .goals {
+    padding: 1rem 1rem;
     overflow-y: hidden;
   }
 }
@@ -142,24 +154,36 @@ body {
   padding: 2.5rem 0 0 0;
   color: #222;
 }
-@media only screen and (max-width: 27em) {
+@media only screen and (max-width: 58em) {
   .goals__heading {
     text-align: center;
+    font-size: 2.5rem;
   }
 }
 .goals__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 27em) {
+@media only screen and (max-width: 58em) {
   .goals__list {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 48em) {
+  .goals__list {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .goals__list {
+    justify-content: space-evenly;
+  }
+}
 .goals__item {
   background-color: #ffffff;
+  list-style: none;
   color: #222;
   padding: 2rem 4rem;
   border-radius: 3rem;
