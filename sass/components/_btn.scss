@@ -10,6 +10,7 @@
     background-color: $color-primary;
     color: $color-white;
     cursor: pointer;
+
     &:active {
         outline: none;
     }
@@ -19,8 +20,7 @@
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
 
-
-    &:hover{
+    &:hover {
         border: 1px solid $color-primary-light;
         background-color: $color-primary-light;
     }
