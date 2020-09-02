@@ -2,11 +2,11 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: $color-background;
+    background-color: #fcfcfc;
 
     @include responsive(48) {
         flex-direction: column;
-
+        background-color: $color-primary;
         height: auto;
     }
 }
