@@ -20,7 +20,7 @@
         -ms-border-radius: 3rem;
         -o-border-radius: 3rem;
         background-color: $color-white;
-        box-shadow: 0 2px 3px rgba($color-shadow, 0.5);
+        box-shadow: 0 2px 4px 1px rgba($color-shadow, 0.6);
         @include responsive(48) {
             border-radius: 0rem;
             -webkit-border-radius: 0rem;

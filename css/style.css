@@ -43,7 +43,7 @@ body {
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
   background-color: #ffffff;
-  box-shadow: 0 2px 3px rgba(170, 170, 170, 0.5);
+  box-shadow: 0 2px 4px 1px rgba(170, 170, 170, 0.6);
 }
 @media only screen and (max-width: 48em) {
   .statistics__box {
@@ -152,7 +152,7 @@ body {
 .goals__heading {
   font-size: 3.5rem;
   padding: 2.5rem 0 0 0;
-  color: #222;
+  color: #8F42E6;
 }
 @media only screen and (max-width: 58em) {
   .goals__heading {
@@ -193,7 +193,7 @@ body {
   -o-border-radius: 3;
   text-align: center;
   margin-top: 2rem;
-  box-shadow: 0 2px 4px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 2px 4px 1px rgba(170, 170, 170, 0.6);
 }
 .goals__time {
   font-size: 1.6rem;
