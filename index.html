@@ -21,14 +21,14 @@
                         <svg>
                             <use href="./assets/icons/symbol-defs.svg#icon-calendar"></use>
                         </svg>
-                        <span>Today: 1-9-2020</span>
+                        <span id="today">Today: 1-9-2020</span>
                     </div>
                     <div class="statistics__status">
                         <div class="statistics__tasks">
                             <svg>
                                 <use href="./assets/icons/symbol-defs.svg#icon-list-alt"></use>
                             </svg>
-                            <span>Tasks: 3</span>
+                            <span id="total">Tasks: 3</span>
                         </div>
                         <div class="statistics__finished">
                             <svg>
@@ -36,13 +36,13 @@
                                     href="./assets/icons/symbol-defs.svg#icon-calendar-check-o"
                                 ></use>
                             </svg>
-                            <span>Finished: 3</span>
+                            <span id="finished">Finished: 3</span>
                         </div>
                         <div class="statistics__percentage">
                             <svg>
                                 <use href="./assets/icons/symbol-defs.svg#icon-percent"></use>
                             </svg>
-                            <span>Percentage: 100</span>
+                            <span id="percentage">Percentage: 100</span>
                         </div>
                     </div>
                     <form class="statistics__form">
@@ -68,16 +68,16 @@
                             <option value="12">12</option>
                         </select>
                         <select id="min" class="statistics__form-min">
-                            <option value="0">00</option>
-                            <option value="1">01</option>
-                            <option value="2">02</option>
-                            <option value="3">03</option>
-                            <option value="4">04</option>
-                            <option value="5">05</option>
-                            <option value="6">06</option>
-                            <option value="7">07</option>
-                            <option value="8">08</option>
-                            <option value="9">09</option>
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
                             <option value="10">10</option>
                             <option value="11">11</option>
                             <option value="12">12</option>
@@ -140,7 +140,7 @@
             <div class="goals">
                 <h4 class="goals__heading">Today's Tasks</h4>
                 <ul class="goals__list">
-                    <li class="goals__item">
+                    <!-- <li class="goals__item">
                         <div class="goals__time"><span>9:30</span>AM</div>
                         <div class="goals__title">Meeting</div>
                         <div class="goals__btns">
@@ -157,135 +157,11 @@
                                 </svg>
                             </button>
                         </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
-                    <li class="goals__item">
-                        <div class="goals__time"><span>9:30</span>AM</div>
-                        <div class="goals__title">Meeting</div>
-                        <div class="goals__btns">
-                            <button>
-                                <svg>
-                                    <use
-                                        href="./assets/icons/symbol-defs.svg#icon-check-square-o"
-                                    ></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="./assets/icons/symbol-defs.svg#icon-trash"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

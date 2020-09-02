@@ -16,5 +16,9 @@ body {
     font-family: "Roboto", sans-serif;
     color: $color-foreground;
     background: $color-background;
-    
+}
+
+.finished {
+    background-color: $color-primary-light !important;
+    color: $color-white !important;
 }
