@@ -4,7 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__box{
+    @include responsive(64) {
+        margin: 0;
+    }
+    &__box {
         padding: 5rem 3.5rem;
         border-radius: 3rem;
         -webkit-border-radius: 3rem;
@@ -12,13 +15,22 @@
         -ms-border-radius: 3rem;
         -o-border-radius: 3rem;
         background-color: $color-white;
-        box-shadow: 0 2px 3px rgba($color-shadow,0.5);
+        box-shadow: 0 2px 3px rgba($color-shadow, 0.5);
+        @include responsive(64) {
+            width: 100%;
+            padding: 5rem 3.5rem;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+}
     }
 
     &__heading {
         color: $color-foreground;
         font-size: 2.9rem;
-    
+
         text-transform: uppercase;
         padding-bottom: 1.5rem;
     }

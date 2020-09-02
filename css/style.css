@@ -26,6 +26,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 64em) {
+  .statistics {
+    margin: 0;
+  }
+}
 .statistics__box {
   padding: 5rem 3.5rem;
   border-radius: 3rem;
@@ -35,6 +40,17 @@ body {
   -o-border-radius: 3rem;
   background-color: #ffffff;
   box-shadow: 0 2px 3px rgba(170, 170, 170, 0.5);
+}
+@media only screen and (max-width: 64em) {
+  .statistics__box {
+    width: 100%;
+    padding: 5rem 3.5rem;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
 }
 .statistics__heading {
   color: #222;
@@ -102,22 +118,44 @@ body {
   display: flex;
   background-color: #e7e7e7;
 }
+@media only screen and (max-width: 64em) {
+  .container {
+    flex-direction: column;
+  }
+}
 
 .goals {
   flex: 2;
   padding: 0 4rem 0 0;
   overflow-y: scroll;
 }
+@media only screen and (max-width: 64em) {
+  .goals {
+    width: 100%;
+    padding: 5rem 3.5rem;
+    overflow-y: hidden;
+  }
+}
 .goals__heading {
   font-size: 3.5rem;
   padding: 2.5rem 0 0 0;
   color: #222;
+}
+@media only screen and (max-width: 30em) {
+  .goals__heading {
+    text-align: center;
+  }
 }
 .goals__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 30em) {
+  .goals__list {
+    justify-content: center;
+  }
 }
 .goals__item {
   background-color: #ffffff;

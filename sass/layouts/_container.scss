@@ -3,4 +3,8 @@
     height: 100vh;
     display: flex;
     background-color: $color-background;
+
+    @include responsive(64) {
+        flex-direction: column;
+    }
 }

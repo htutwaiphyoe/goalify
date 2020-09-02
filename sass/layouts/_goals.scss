@@ -2,17 +2,29 @@
     flex: 2;
     padding: 0 4rem 0 0;
     overflow-y: scroll;
+    @include responsive(64) {
+        width: 100%;
+        padding: 5rem 3.5rem;
+
+        overflow-y: hidden;
+    }
     &__heading {
         font-size: 3.5rem;
         padding: 2.5rem 0 0 0;
 
         color: $color-foreground;
+        @include responsive(30) {
+            text-align: center;
+        }
     }
     &__list {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include responsive(30) {
+            justify-content: center;
+        }
     }
     &__item {
         // background-color: $color-primary-light;
