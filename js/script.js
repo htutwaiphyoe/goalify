@@ -14,7 +14,9 @@ const TaskController = (function () {
         finished: [],
         percentage: -1,
     };
-
+    const storeLocalStorage = () => {
+        localStorage.setItem("goalify", JSON.stringify(appData));
+    };
     const updateAppData = () => {
         const tot = appData.goals.length;
 
@@ -37,8 +39,8 @@ const TaskController = (function () {
         let percentage = (appData.finished.length / tot) * 100;
         appData.percentage = isNaN(percentage) ? (percentage = 0) : Math.round(percentage);
         appData.tot = tot;
-
-        console.log(appData);
+        storeLocalStorage();
+        // console.log(appData);
     };
     return {
         addInputData: function (data) {
@@ -56,6 +58,7 @@ const TaskController = (function () {
         },
         getState: () => {
             return {
+                goals: appData.goals,
                 tot: appData.tot,
                 finished: appData.finished.length,
                 percentage: appData.percentage,
@@ -76,6 +79,12 @@ const TaskController = (function () {
             if (index > -1 || indexFinish > -1) {
                 appData.goals.splice(index, 1);
                 appData.finished.splice(indexFinish, 1);
+            }
+        },
+        restoreData: () => {
+            const data = JSON.parse(localStorage.getItem("goalify"));
+            if (data !== null) {
+                appData = data;
             }
         },
     };
@@ -112,7 +121,7 @@ const UIController = (function () {
         showItem: (item) => {
             let markup;
             markup = `
-            <li class="goals__item" data-id=${item.id}>
+            <li class="goals__item ${item.finished ? "finished" : ""}" data-id=${item.id}>
             <div class="goals__time"><span>${item.hour}:${item.min}</span>${item.time}</div>
             <div class="goals__title">${item.task}</div>
             <div class="goals__btns">
@@ -208,7 +217,15 @@ const MainController = (function (task, UI) {
         //     }
         // });
     };
-
+    const setData = () => {
+        task.restoreData();
+        const status = task.getState();
+        UI.displayState(status);
+        status.goals.forEach((goal) => {
+            UI.showItem(goal);
+        });
+        updateStatus();
+    };
     return {
         init: () => {
             UI.displayState({
@@ -218,6 +235,7 @@ const MainController = (function (task, UI) {
             });
             setEventListener();
             UI.displayDate();
+            setData();
         },
     };
 })(TaskController, UIController);
