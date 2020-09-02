@@ -151,9 +151,10 @@ const UIController = (function () {
         },
         displayDate: () => {
             const today = new Date();
+            console.log(today);
             document.querySelector(
                 DOMs.date
-            ).innerHTML = `Today: ${today.getDay()}-${today.getMonth()}-${today.getFullYear()}`;
+            ).innerHTML = `Today: ${today.getDate()}-${today.getMonth()}-${today.getFullYear()}`;
         },
         displayFinished: (element) => {
             element.classList.toggle("finished");
