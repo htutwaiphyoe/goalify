@@ -147,11 +147,11 @@ body {
 .goals__heading {
   font-size: 3.5rem;
   padding: 2.5rem 0 0 0;
+  text-align: center;
   color: #8F42E6;
 }
 @media only screen and (max-width: 58em) {
   .goals__heading {
-    text-align: center;
     font-size: 2.5rem;
   }
 }
@@ -180,7 +180,7 @@ body {
   background-color: #ffffff;
   list-style: none;
   color: #222;
-  padding: 2rem 4rem;
+  padding: 1rem 3rem;
   border-radius: 3rem;
   -webkit-border-radius: 3;
   -moz-border-radius: 3;

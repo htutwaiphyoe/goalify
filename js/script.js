@@ -33,7 +33,7 @@ const TaskController = (function () {
                 }
             });
         }
-        console.log(appData.finished.length, tot);
+
         let percentage = (appData.finished.length / tot) * 100;
         appData.percentage = isNaN(percentage) ? (percentage = 0) : Math.round(percentage);
         appData.tot = tot;
