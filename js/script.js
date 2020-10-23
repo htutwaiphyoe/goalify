@@ -40,7 +40,6 @@ const TaskController = (function () {
         appData.percentage = isNaN(percentage) ? (percentage = 0) : Math.round(percentage);
         appData.tot = tot;
         storeLocalStorage();
-        // console.log(appData);
     };
     return {
         addInputData: function (data) {
@@ -152,9 +151,9 @@ const UIController = (function () {
         displayDate: () => {
             const today = new Date();
             console.log(today);
-            document.querySelector(
-                DOMs.date
-            ).innerHTML = `Today: ${today.getDate()}-${today.getMonth()}-${today.getFullYear()}`;
+            document.querySelector(DOMs.date).innerHTML = `Today: ${today.getDate()}-${
+                today.getMonth() + 1
+            }-${today.getFullYear()}`;
         },
         displayFinished: (element) => {
             element.classList.toggle("finished");

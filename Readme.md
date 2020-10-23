@@ -1,3 +1,18 @@
-## Goalify
+# Goalify - To-do-list Application
 
-This is JS project for to do list
+## Technologies
+
+-   HTML
+-   CSS
+-   SASS
+-   JavaScript
+-   Module Pattern
+
+## Features
+
+-   Adding tasks with appropriate time
+-   Marking tasks that are done
+-   Deleting unnecessary tasks
+-   Traking tasks
+-   Overall percentage
+-   Responsive
