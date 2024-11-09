@@ -1,0 +1,66 @@
+[
+  {
+    "roomNumber": "S1",
+    "name": "Superior One",
+    "description": "A friendly atmosphere and natural delights await your visit to the town of Wells! Stay at this well-equipped",
+    "category": "Superior",
+    "facilities": [
+      "650861796e62cac00b4f68f2",
+      "650861fa6e62cac00b4f68f6",
+      "6508640e6e62cac00b4f68f8",
+      "6508641d6e62cac00b4f68fa",
+      "650864306e62cac00b4f68fc",
+      "6508644e6e62cac00b4f68fe",
+      "650864736e62cac00b4f6900",
+      "6508649a6e62cac00b4f6902",
+      "650864ac6e62cac00b4f6904",
+      "650864c26e62cac00b4f6906",
+      "6508651e6e62cac00b4f690a",
+      "6508652a6e62cac00b4f690c",
+      "6508654a6e62cac00b4f690f",
+      "6508655e6e62cac00b4f6911"
+    ],
+    "pricePerNight": 29,
+    "guestCapacity": 2,
+    "bedType": "double",
+    "images": [
+      {
+        "publicId": "king_hanysp",
+        "url": "https://res.cloudinary.com/timmysama/image/upload/v1695051269/hotel-valhalla/rooms/king_hanysp.avif"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "roomNumber": "S2",
+    "name": "Superior Two",
+    "description": "A friendly atmosphere and natural delights await your visit to the town of Wells! Stay at this well-equipped",
+    "category": "Superior",
+    "facilities": [
+      "650861796e62cac00b4f68f2",
+      "650861fa6e62cac00b4f68f6",
+      "6508640e6e62cac00b4f68f8",
+      "6508641d6e62cac00b4f68fa",
+      "650864306e62cac00b4f68fc",
+      "6508644e6e62cac00b4f68fe",
+      "650864736e62cac00b4f6900",
+      "6508649a6e62cac00b4f6902",
+      "650864ac6e62cac00b4f6904",
+      "650864c26e62cac00b4f6906",
+      "6508651e6e62cac00b4f690a",
+      "6508652a6e62cac00b4f690c",
+      "6508654a6e62cac00b4f690f",
+      "6508655e6e62cac00b4f6911"
+    ],
+    "pricePerNight": 29,
+    "guestCapacity": 2,
+    "bedType": "double",
+    "images": [
+      {
+        "publicId": "king_hanysp",
+        "url": "https://res.cloudinary.com/timmysama/image/upload/v1695051269/hotel-valhalla/rooms/king_hanysp.avif"
+      }
+    ],
+    "reviews": []
+  }
+]
